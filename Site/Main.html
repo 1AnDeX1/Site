@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebShoe</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="front">
+        <div>
+            <form align="right" class="form">
+                <div class="form-group">
+                    <label for="name">Login:</label>
+                    <input name="login" type="text" placeholder="Login:" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Password:</label>
+                    <input name="password" type="password" placeholder="Enter password:" required>
+                </div>
+                <div class="btn">
+                    <input value="Login" type="submit">
+                </div>
+
+            </form>
+
+        </div>
+        <div>
+            <center><img width="210" src="logo.png"></center>
+
+            <h1 id="title" style="font-size: 50px;">
+                WebShoe
+            </h1>
+
+        </div>
+
+    </div>
+
+    <img style="margin-left: 100px; margin-right: 100px;">
+    <h2 id="title">
+        Товари
+    </h2>
+
+
+    <div class="mainOfItems">
+        <div class="filter-tree">
+            <ul class="filter-list">
+                <li data-collection="all" class="cleaner hide">
+                    Очистити
+                </li>
+                <li>
+                    <h4 style="cursor: default;">Пошук по назві:</h4>
+                    <input type="text" id="filter-input">
+                </li>
+                <li>
+                    <div class="filter-block-title">
+                        <h3>Ціна</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="filter-block-title">
+                        <h3>Бренди</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="filter-block-title" id="filter-collection">
+                        <h3>Колекції</h3>
+                    </div>
+                    <div class="filter-block-content">
+                        <nav id="nav_filter_collection">
+                            <ul class="filter-option-box">
+                                <li data-collection="Jordan_1" class="filter-label">
+                                    Jordan 1
+                                </li>
+                                <li data-collection="Dunk" class="filter-label">
+                                    Dunk
+                                </li>
+                                <li data-collection="Jordan_4" class="filter-label">
+                                    Jordan 4
+                                </li>
+                                <li data-collection="Yeazzy" class="filter-label">
+                                    Yeazzy
+                                </li>
+                                <li data-collection="AirForce" class="filter-label">
+                                    AirForce
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="menu">
+                <nav id="nav_menu">
+                    <p>Сортування <span class="menu_arrow arrow"></span></p>
+
+                    <ul id="nav_menu_list">
+                        <li id="PriceUp">
+                            Ціна за зростанням
+                        </li>
+                        <li id="PriceDown">
+                            Ціна за спаданням
+                        </li>
+                        <li id="Rating">
+                            За рейтингом
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="items">
+                <div class="item AirForce" data-price="4400" data-rating="1">
+                    <img src="item-photo/airforce1.jpg">
+                    <!-- <a href="shoe.html" class="link">Air Force 1 <br>
+                                    Ціна: 4400 грн</a> -->
+                    <p>
+                        Air Force 1
+                        Ціна: 4400 грн
+                    </p>
+
+                </div>
+                <div class="item Jordan_1" data-price="6500" data-rating="4">
+                    <img src="item-photo/Air-Jordan-1-High-OG-Grey-Fog-555088-108-1.jpeg">
+                    <p>
+                        Air Jordan 1 High OG Grey Fog <br>
+                        Ціна: 6500 грн
+                    </p>
+
+                </div>
+                <div class="item Yeazzy" data-price="9500" data-rating="3">
+                    <img src="item-photo/yeazzy550 Black.jpg">
+                    <p>
+                        Yeazzy 550 <br>
+                        Ціна: 9500 грн
+                    </p>
+
+                </div>
+                <div class="item Dunk" data-price="22500" data-rating="5">
+                    <img src="item-photo/Nike-SB-Dunk-Low-Travis-Scott.webp">
+                    <p>
+                        Nike SB Dunk Low Travis Scott <br>
+                        Ціна: 22500 грн
+                    </p>
+
+                </div>
+                <div class="item Jordan_4" data-price="15500" data-rating="2">
+                    <img src="item-photo/air-jordan-4-military-black-2_1200x.jpg">
+                    <p>
+                        Air Jordan 4 Military Black <br>
+                        Ціна: 15500 грн
+                    </p>
+
+                </div>
+                <div class="item Jordan_1" data-price="7200" data-rating="6">
+                    <img src="item-photo/air-jordan-1-university-blue-release-info-02.webp">
+                    <p>
+                        Air Jordan 1 University Blue <br>
+                        Ціна: 7200 грн
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contacts">
+        <h3>Contacts</h3>
+        <table>
+            <tr>
+                <th>Phone</th>
+                <th>Mail</th>
+            </tr>
+            <tr>
+                <td>+380956457873</td>
+                <td>davvjvdsvk@gmail.com</td>
+            </tr>
+            <tr>
+                <td>+380975674857</td>
+                <td>wcjkjncercknc@gmail.com</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="arrowBottom"></div>
+
+    <script src="action.js"></script>
+</body>
+
+</html>

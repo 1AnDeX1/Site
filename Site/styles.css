@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+body {
+    background-color: #f7f5f5;
+    color: black;
+
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    /* font: normal 18px 'Roboto', sans-serif; */
+
+}
+
+.form {
+    height: 50px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+}
+
+.form-group input {
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    font-family: inherit;
+    color: black;
+}
+
+.btn input {
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    color: black;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.btn:hover input {
+    color: white;
+}
+
+.form ::placeholder {
+    font-style: italic;
+}
+
+.front {
+    border: 10px solid black;
+    padding: 10px 10px 10px 10px;
+    background: linear-gradient(to right, grey, rgb(191, 192, 193), white, rgb(191, 192, 193), grey);
+    margin-bottom: 0;
+}
+
+#title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.arrow {
+    margin: 0 5px;
+    position: relative;
+    top: 18px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid #000;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+
+.mainOfItems {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    clear: left;
+}
+
+.filter-tree {
+    width: 20%;
+}
+
+.filter-list {
+    list-style: none;
+    padding: 0;
+}
+
+.filter-block-title {
+    display: flex;
+    cursor: pointer;
+    padding: 5px;
+    margin: 2px 0;
+}
+
+.filter-block-title h3 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    text-overflow: uppercase;
+    font-weight: 700;
+}
+
+.filter-option-box {
+    list-style: none;
+    display: none;
+}
+
+.filter-label {
+    display: flex;
+    flex: 1 1 auto;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+#filter-input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.cleaner {
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.content {
+    width: 80%;
+    display: inline-block;
+}
+
+.menu {
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#div_menu {
+    text-align: right;
+    width: auto;
+}
+
+#nav_menu {
+    text-align: right;
+    width: auto;
+    margin-right: 20px;
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#nav_menu_list {
+    display: none;
+}
+
+#nav_menu:hover #nav_menu_list {
+    display: block;
+}
+
+#nav_menu_list li {
+    padding: 3px 0;
+    color: grey;
+    list-style: none;
+}
+
+#nav_menu_list li:hover {
+    color: #000;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.item {
+    text-align: center;
+    box-shadow: 0px 0px 0px rgb(0, 0, 0);
+    margin: 10px;
+    min-height: 300px;
+    max-width: 260px;
+    min-width: 200px;
+    float: left;
+    background: lightgray;
+    border-radius: 28px;
+}
+
+.item:hover {
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.item p {
+    margin: 0 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.item img {
+    height: 50%;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 28px;
+}
+
+#contacts {
+    background-color: lightgray;
+}
+
+#contacts table {
+    width: 40%;
+    margin: auto;
+}
+
+#contacts table td {
+    padding-bottom: 10px;
+    color: rgb(56, 56, 56);
+}
+
+/* .contacts table td:nth-child(even) {
+    background-color: red;
+} */
+
+#contacts h3 {
+    text-align: center;
+}
+
+.link {
+    color: black;
+    text-decoration-line: none;
+}
+
+.link:hover {
+    text-decoration-line: underline;
+
+}
+
+#arrowBottom {
+    color: black;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+
+#arrowBottom::before {
+    font-size: 34px;
+    content: '▲';
+}
+
+.hide {
+    opacity: 1;
+    animation-name: a1;
+    /* animation-duration: 1s; */
+    animation-fill-mode: forwards;
+}
+
+@keyframes a1 {
+    to {
+        opacity: 1;
+        font-size: 0;
+        max-height: 0;
+        min-height: 0;
+        max-width: 0;
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+}
